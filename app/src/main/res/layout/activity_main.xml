@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="增加透明度"
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="降低透明度"
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="下一页"
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!--显示整体图片的ImageView-->
+    <ImageView
+        android:scaleType="fitCenter"
+        android:src="@drawable/image_1"
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="280dp" />
+    <!--显示局部图片的ImageView-->
+    <ImageView
+        android:layout_margin="10dp"
+        android:background="#00f"
+        android:id="@+id/image2"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+</LinearLayout>
